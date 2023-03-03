@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: rgb(242, 229, 229);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proje2.loginScreenController">
+   <children>
+      <Button fx:id="login_kayitol" layoutX="244.0" layoutY="428.0" mnemonicParsing="false" onAction="#onKayitOlButtonClicked" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: rgb(232, 196, 196);" text="KAYIT OL" textFill="#2b3a55" />
+      <Button fx:id="login_giris" layoutX="130.0" layoutY="346.0" mnemonicParsing="false" onAction="#onLoginButtonClicked" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: CE7777;" text="GİRİŞ YAP" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="deneme" layoutX="104.0" layoutY="35.0" prefHeight="58.0" prefWidth="192.0" text="Tekrar hoş geldin!" textFill="#ce7777">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login_tc" layoutX="28.0" layoutY="155.0" prefHeight="26.0" prefWidth="336.0" />
+      <TextField fx:id="login_sifre" layoutX="28.0" layoutY="223.0" prefHeight="26.0" prefWidth="336.0" />
+      <Label layoutX="28.0" layoutY="130.0" prefHeight="18.0" prefWidth="73.0" text="TC Kimlik*" textFill="#2b3a55" />
+      <Label layoutX="28.0" layoutY="196.0" prefHeight="18.0" prefWidth="73.0" text="Şifre*" textFill="#2b3a55" />
+      <Label layoutX="244.0" layoutY="403.0" text="Kayıtlı değil misin?" textFill="#868686" />
+      <Label fx:id="hataligiris" layoutX="28.0" layoutY="113.0" prefHeight="18.0" prefWidth="207.0" textFill="#d70000" />
+   </children>
+   <opaqueInsets>
+      <Insets right="24.0" />
+   </opaqueInsets>
+</AnchorPane>
